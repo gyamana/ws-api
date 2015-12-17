@@ -1,0 +1,25 @@
+{
+  "name": "ws-api",
+  "version": "0.0.1",
+  "description": "socket.io API",
+  "main": "app/App.js",
+  "scripts": {
+    "start": "node app/App",
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyamana/ws-api.git"
+  },
+  "author": "George Yamana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gyamana/ws-api/issues"
+  },
+  "homepage": "https://github.com/gyamana/ws-api#readme",
+  "dependencies": {
+    "moment": "^2.10.6",
+    "socket.io": "^1.3.7",
+    "winston": "^2.1.1"
+  }
+}
