@@ -1,22 +1,20 @@
 language: node_js
 node_js:
-  - "0.12.7"
+- 0.12.7
 sudo: false
 before_install:
-  - npm install -g grunt-cli
-notifications:
-services:
-before_script:
+- npm install -g grunt-cli
+notifications: 
+services: 
+before_script: 
 deploy:
-  - provider: elasticbeanstalk
-    app: "WS-API"
-    env: "dev-au-api-ws-web-a"
-    on:
-      branch: "develop"
-    region: "ap-southeast-2"
-    access_key_id:
-      secure: "L3jtwwEc9tj+/3cfH9TwxXYgZmTjEDH+DmAn18ckUjd8eHrkRVvt9gwMj5TRrusngVQ7Dcj4qh/o0FlXvU6ZCWZrl7mROismAtz/8nZrg+SVFsb5wCdDO7WUAN/jPuawP0ICDXUYI9abQlpXdKE5FFidgdr19eNzRxiojOAPsBegtjmT0hQapnbTzqynO7hoNyypQgvc3zuF3Z70wgm1dO8OPr9QQ00s6BCdrKE5FB2Qbc8ARyRwl72mMJAQVyn/YYDJ4aDOf0ahtGmX3ATvbzubGb/MyaufBVBYbAXzq7cjWckiRotQuFn4MM6VXeiS/Yw+/Fu/W6hbZC2JpROKfGOetl2+i61wuQIxqmDTlaUVHGgb3eoX/yF/hKmHpCv/KG4FvGzlora4/fjU9K7H6qQTelRH6BIykOMd62LCesJmc1Kk/hnH0HZp3p9sSgv6yi1aiCfIziRSs5fBe5zPn4EgQeOWonEfbrfQyKCBoJerL9VNSOFRjarZy353VAgYNjIut/rrMjZWHCafIqW2Kvsa7lsfdSemN8oka6Sa0jiXyD0Nv+UQVcdA+7NbBsHGHCVN5X677E90k6OvbO1o256cWXO0R0wba/gnddl29h93rjeXFkXWRaFLbnImdVHVXqsIgVuKVTEhYvxUJKxpV5g4qpPtwvXcIr82Q5LeLww="
-    secret_access_key:
-      secure: "wRKV0UbhTPfhuzB/DQW4ibb1RsA8mFjrFsc8y19OyYZvL3ofhCHjXlfRIEIaDoaAqk1Y9B214JKkPOQ0889gDQQF/xcxoe/oMcKUFMG77X9DZUbTN4HFDsRze6U7XOYil6bxaZ+KJiijNG1/0QCqcpGr1BXKNomWr95jtb1eMVzh7NylQqd11j/SrYmETGmNX7jP81oTxocUPM15agvAnERVFF8sbZkH4UwFhaQBZa02hpmUJyuFQ1GOdkz2SIYCeI+hIqd0cTK0PEaaxyfpLyc0V+AbrVJb3Ze/RKeLZp1j8PTojrpkI4Dy3/lvaABjEpo/YLm8hwhScnmMAEKuIP79uWytTFcdSHannxuR/LCv8LeAgIPGwhYcVvvaMjP66U0HpFal2MIY8Ye65d+DZU2XT3sSu5xP24SvLEm8NhvPNodz33fvc+TS9AJiNoc3wwimZ833s/aXE7U1TZC1okQOk6rM7FbaQQ/ioUJ7jfIMmISl5jrrSfk5LgS+ZK0jbdAajG8AWU6oEPOjDEIuh+WxKoTtFkKbbEOJZuymERYwK7Y0nzxAvpkVyGwhOT1UP78EcT3KCcIJQc7xjBA8GpqPRevMvTfKCo2+5xdzRiurwQP7l2Gv8zsM6rXSJi9RFl5WdXWzljLAs+Hjkw5u2kn/hAvM6icG8/DttQ3C9R0="
-    skip_cleanup: true
-    bucket_name: "elasticbeanstalk-ap-southeast-2-981939279353"
+  provider: elasticbeanstalk
+  access_key_id: AKIAIXKVNONLPTV2ZRMQ
+  secret_access_key:
+    secure: EgX3ZrJVkLuDhwpRjW7e9H9kdvo1gHqvMj6BqYB/lZVLrauzsKmkPAO6OaRVekG+Dd5bgWgzwXb7XG82LLrarv68TJwBkjs4nWdTDsdwhl5CU9q/RkX2W/jM7kpvEXDVHr2gaUab9LxfvANMSa+Ngq7k1GPqGnZLl1I1seQXIXqZjL5BQ9rjv7A4lACvYbsOPopruEP6Iu/utm9CudH+OpcpCV9bSm3vVWHRmY/fSOj7KWn9Q8XY5gCM+v7EBiGa1B8oMuYpP9KBwVw35lfaugQYEkv6mXDCVC4qR364Bho/+CwYqe58xheMwtsju9/Pq1WREuPo+0ceQTYDi2IDS7KUUmvxETpGlzQAlfMewbFBULlBw6GgOa7BRJBUuVMOHULcpzp2l2IdNSzHAQMVh9GBso6FrZ/UCFBFRVraBXz1UyOBCAcxXRVWb/XJ+33aC2UvI0AR0io0jhy0sPKU8OtcOo4aSgAf8wBfqliy5fwnuYQigkron6/DWZp6gi5Zi/7JvWHSmE+N3jQP8j+QVZ/gRB4osUCFaDbTz1PpyakuikSlEYmjIfH1raV8Sr9J34XCmDs1j5AYtafwR7tGCO7C/xIVKYeBvvlKFT2j6Pnw/dC84bAq7s/AO6K280KMgdIEVEzvi01FHjwmdJzpkAZPJcib0/liw40y4B2UlRQ=
+  region: ap-southeast-2
+  app: WS-API
+  env: dev-au-api-ws-web-a
+  on:
+    repo: gyamana/ws-api
+    branch: develop
