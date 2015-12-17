@@ -2,7 +2,8 @@
 
 var Io = require('socket.io');
 
-var Log = require('./utils/Log');
+var Env = require('./Env'),
+    Log = require('./utils/Log');
 
 var io,
     ioSockets = {};
@@ -31,8 +32,8 @@ function createSocketServer() {
         });
     });
 
-    io.listen(80);
+    io.listen(Env.PORT);
 }
 
-Log.info('Starting socket.io server on port: ' + 80);
+Log.info('Starting socket.io server on port: ' + Env.PORT);
 createSocketServer();
