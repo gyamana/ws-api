@@ -12,4 +12,6 @@ exports.ENV = process.env.ENV || 'dev';
 
 exports.LOG_LEVEL = process.env.LOG_LEVEL || 'info';
 
+exports.PORT = proecess.env.PORT || '15002';
+
 exports.SOCKET_IO_PORT = process.env.SOCKET_IO_PORT || 8443;
