@@ -18,3 +18,5 @@ deploy:
   on:
     repo: gyamana/ws-api
     branch: develop
+  skip_cleanup: true
+  bucket_name: "elasticbeanstalk-ap-southeast-2-981939279353"
