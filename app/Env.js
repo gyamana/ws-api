@@ -12,7 +12,7 @@ exports.ENV = process.env.ENV || 'dev';
 
 exports.LOG_LEVEL = process.env.LOG_LEVEL || 'info';
 
-exports.MONGO_URL = process.env.MONGO_URL || 'mongodb://localhost:27017/spotz-push';
+exports.MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/spotz-push';
 
 exports.PORT = process.env.PORT || '15002';
 

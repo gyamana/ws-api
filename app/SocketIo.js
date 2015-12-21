@@ -68,11 +68,11 @@ function createSocketServer() {
     Async.waterfall([
         function (callback) {
 
-            mongoClient.connect(Env.MONGO_URL, callback);
+            mongoClient.connect(Env.MONGO_URI, callback);
         },
         function (result, callback) {
 
-            Log.info('Connected to: ' + Env.MONGO_URL);
+            Log.info('Connected to: ' + Env.MONGO_URI);
             db = result;
             io = new Io();
             io.on('connection', function (socket) {
