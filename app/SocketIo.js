@@ -75,6 +75,7 @@ function createSocketServer() {
             Log.info('Connected to: ' + Env.MONGO_URI);
             db = result;
             io = new Io();
+            io.serveClient(false);
             io.on('connection', function (socket) {
 
                 var redisClient = Redis.createClient(Env.REDIS_PORT, Env.REDIS_HOST);
