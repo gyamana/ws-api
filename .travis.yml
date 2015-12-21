@@ -12,18 +12,6 @@ deploy:
     access_key_id: AKIAIXKVNONLPTV2ZRMQ
     secret_access_key:
       secure: EgX3ZrJVkLuDhwpRjW7e9H9kdvo1gHqvMj6BqYB/lZVLrauzsKmkPAO6OaRVekG+Dd5bgWgzwXb7XG82LLrarv68TJwBkjs4nWdTDsdwhl5CU9q/RkX2W/jM7kpvEXDVHr2gaUab9LxfvANMSa+Ngq7k1GPqGnZLl1I1seQXIXqZjL5BQ9rjv7A4lACvYbsOPopruEP6Iu/utm9CudH+OpcpCV9bSm3vVWHRmY/fSOj7KWn9Q8XY5gCM+v7EBiGa1B8oMuYpP9KBwVw35lfaugQYEkv6mXDCVC4qR364Bho/+CwYqe58xheMwtsju9/Pq1WREuPo+0ceQTYDi2IDS7KUUmvxETpGlzQAlfMewbFBULlBw6GgOa7BRJBUuVMOHULcpzp2l2IdNSzHAQMVh9GBso6FrZ/UCFBFRVraBXz1UyOBCAcxXRVWb/XJ+33aC2UvI0AR0io0jhy0sPKU8OtcOo4aSgAf8wBfqliy5fwnuYQigkron6/DWZp6gi5Zi/7JvWHSmE+N3jQP8j+QVZ/gRB4osUCFaDbTz1PpyakuikSlEYmjIfH1raV8Sr9J34XCmDs1j5AYtafwR7tGCO7C/xIVKYeBvvlKFT2j6Pnw/dC84bAq7s/AO6K280KMgdIEVEzvi01FHjwmdJzpkAZPJcib0/liw40y4B2UlRQ=
-    region: ap-southeast-2
-    app: WS-API
-    env: dev-au-api-ws-a
-    on:
-      repo: gyamana/ws-api
-      branch: develop
-    skip_cleanup: true
-    bucket_name: "elasticbeanstalk-ap-southeast-2-981939279353"
-  - provider: elasticbeanstalk
-    access_key_id: AKIAIXKVNONLPTV2ZRMQ
-    secret_access_key:
-      secure: EgX3ZrJVkLuDhwpRjW7e9H9kdvo1gHqvMj6BqYB/lZVLrauzsKmkPAO6OaRVekG+Dd5bgWgzwXb7XG82LLrarv68TJwBkjs4nWdTDsdwhl5CU9q/RkX2W/jM7kpvEXDVHr2gaUab9LxfvANMSa+Ngq7k1GPqGnZLl1I1seQXIXqZjL5BQ9rjv7A4lACvYbsOPopruEP6Iu/utm9CudH+OpcpCV9bSm3vVWHRmY/fSOj7KWn9Q8XY5gCM+v7EBiGa1B8oMuYpP9KBwVw35lfaugQYEkv6mXDCVC4qR364Bho/+CwYqe58xheMwtsju9/Pq1WREuPo+0ceQTYDi2IDS7KUUmvxETpGlzQAlfMewbFBULlBw6GgOa7BRJBUuVMOHULcpzp2l2IdNSzHAQMVh9GBso6FrZ/UCFBFRVraBXz1UyOBCAcxXRVWb/XJ+33aC2UvI0AR0io0jhy0sPKU8OtcOo4aSgAf8wBfqliy5fwnuYQigkron6/DWZp6gi5Zi/7JvWHSmE+N3jQP8j+QVZ/gRB4osUCFaDbTz1PpyakuikSlEYmjIfH1raV8Sr9J34XCmDs1j5AYtafwR7tGCO7C/xIVKYeBvvlKFT2j6Pnw/dC84bAq7s/AO6K280KMgdIEVEzvi01FHjwmdJzpkAZPJcib0/liw40y4B2UlRQ=
     region: eu-west-1
     app: spotz-push
     env: dev-eu-api-ws-c
