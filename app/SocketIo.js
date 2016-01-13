@@ -59,6 +59,8 @@ function checkAndCreateSocket(socket, query, done) {
             Log.error(err);
             return done(new Error());
         }
+        Log.info('Client connected: ' + socket.id + ' projectId: ' + projectId + '  deviceId: ' + deviceId);
+
         done();
     });
 }
@@ -79,8 +81,6 @@ function createSocketServer() {
             io.on('connection', function (socket) {
 
                 var redisClient = Redis.createClient(Env.REDIS_PORT, Env.REDIS_HOST);
-
-                Log.info('Client connected: ' + socket.id);
 
                 redisClient.on('message', function (channel, message) {
 
